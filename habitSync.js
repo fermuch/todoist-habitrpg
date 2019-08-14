@@ -287,8 +287,8 @@ habitSync.prototype.checkTodoistLabels = function(oldLabel, newLabel) {
   // Compares ids of todoist labels to determine
   // if the item needs updating
   
-  if (!oldLabel && newLabel) {
-    return true;
+  if (!oldLabel) {
+    return false;
   }
 
   if(oldLabel.length != newLabel.length) {
